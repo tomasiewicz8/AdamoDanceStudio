@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigiendo...</title>
+    <script>
+        function redirectToInstagram() {
+            window.location.href = "instagram://user?username=adamodancestudio";
+
+            setTimeout(function () {
+                window.location.href = "https://www.instagram.com/adamodancestudio/";
+            }, 2000);
+        }
+
+        window.onload = redirectToInstagram;
+    </script>
+</head>
+<body>
+    <h1>Redirigiendo a Instagram...</h1>
+    <p>Si no ocurre nada, haz <a href="https://www.instagram.com/adamodancestudio/">clic aquí</a>.</p>
+</body>
+</html>
